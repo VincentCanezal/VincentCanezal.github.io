@@ -1,3 +1,3 @@
-http://VincentCanezal.github.io
+https://VincentCanezal.github.io
 
 Hello world!;
