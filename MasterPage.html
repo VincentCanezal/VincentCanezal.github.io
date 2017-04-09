@@ -1,0 +1,237 @@
+<html>
+
+<head>
+    <title>My HTML</title>
+    <link rel="stylesheet" type="text/css" href="Second.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script>	
+	
+     function loader()
+	 {  
+		
+		$('a#info').css("color", "white");
+		 $('#sidebarcontent').show(800);
+		 
+		   $('html,body').animate({
+                    scrollTop: $("#sidebarl").offset().top - $('#header2').height()
+                },
+                'slow');
+	
+		 
+	 }
+	
+    $(document).ready(function() {
+		
+		
+	
+	
+	
+        $("a#info").click(function() {
+
+	
+			
+               $('html,body').animate({
+                    scrollTop: $("#sidebarl").offset().top - $('#header2').height()
+                },
+                'slow');
+
+
+            $('a#edu').css("color", "#158cba");
+
+            $('a#skills').css("color", "#158cba");
+            $('a#info').css("color", "white");
+
+        });
+
+        $("a#edu").click(function() {
+
+		   
+            $('html,body').animate({
+                    scrollTop: $("#sidebar2").offset().top - $('#header2').height()
+                },
+                'slow');
+
+            $('a#edu').css("color", "white");
+            $('a#info').css("color", "#158cba");
+            $('a#skills').css("color", "#158cba");
+
+
+
+        });
+
+        $("a#skills").click(function() {
+
+
+            $('html,body').animate({
+                    scrollTop: $("#sidebar3").offset().top - $('#header2').height()
+                },
+                'slow');
+				
+				
+				
+
+					$('a#edu').css("color", "#158cba");
+					$('a#info').css("color", "#158cba");
+					$('a#skills').css("color", "white");
+			    	$('#sidebarcontent').hide();
+
+     
+		
+        });
+	
+	
+    });
+    </script>
+<script>
+		
+    $(document).ready(function() {
+		
+					
+			$(window)
+	
+		$(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+
+
+
+		var scrollinfo = $("#sidebarl").offset().top;
+		var scrolledu = $("#sidebar2").offset().top;
+		var scrollskills = $("#sidebar3").offset().top;
+		
+		
+		
+
+	    if (scroll >=1000) 
+	    {
+		
+				
+				
+					
+				    
+				    $('a#edu').css("color", "#158cba");
+				    $('a#info').css("color", "#158cba");
+				   $('a#skills').css("color", "white");
+					 
+							
+					$('#sidebarcontent').hide();
+					$('#sidebarcontent2').hide();
+					$('#sidebarcontent3').show(800);
+				
+				
+				
+	    } 
+		else if(scroll >=400)
+		{
+					    $('a#skills').css("color", "158cba");
+				        $('a#info').css("color", "#158cba");
+					    $('a#edu').css("color", "white");
+
+					$('#sidebarcontent').hide();
+					$('#sidebarcontent3').hide();
+					$('#sidebarcontent2').show(800);
+				
+		}
+		else
+		{
+			
+					$('a#skills').css("color", "158cba");
+				    $('a#edu').css("color", "158cba");
+				    $('a#info').css("color", "white");
+
+					$('#sidebarcontent3').hide();
+					$('#sidebarcontent2').hide();
+				    $('#sidebarcontent').show(800);
+
+		
+					
+			
+			
+		}
+		
+	});
+
+});
+
+</script>
+
+
+</head>
+
+<body onload="loader()">
+    
+    <div id=header2>
+
+		<img class="portimage" src="portfolio.png"; align="left"></img> 
+		<ul style ="list-style:none"; align="right">
+		
+			<li class="centerl"><a id=info href="#Information">Personal Information</a></li>
+			<li class="ss"><img src="portfolio.png"; width="15px";></img><a id=edu href="#Education">Education</a></li>
+			<li class="ss"><a  id=skills href="#Skills">Knowledge & Skills</a></li>
+		</ul>
+<hr></hr>
+		
+    </div>
+	
+	<div id=barier>
+</div>
+	
+	<br>
+	<br>
+     <br>
+	<br>
+     <br>
+	<br>
+      <br>
+	<br>
+
+
+    <div id=sidebarl>
+	<div id=sidebarcontent>
+	 <p style=" background-color: #111; color:white; Font-Style:Arial" align="center">Personal Information</p>
+      &nbsp;<img src="pic.png"; border="2"; alt="Smiley face"; style="width:200px; height:150px; padding:2 2 2 2; color:white"><span style="color:#ffbb00; font-weight:bold;"><font face="Serif,Bold"  Size="5px"> Name:</font></span> <span style="Color:white"><font size="5px">Vincent Canezal</font></span></img>
+        <hr style="width:97%; background-color:green"> 
+		<ul style="list-style-type: none;">
+
+			<li ><img src="adress.png" style="width:30px; height:25px;"></img> <font face="Serif" color="#ffbb00" Size="5px">Address:</font> <span style="color:white; font-size:16px;">#41 Daisy Street Pasong Tamo Quezon City.</span></li>
+			<br>
+			<li ><img src="contact.png" style="width:30px; height:25px;"></img><font face="Serif" color="#ffbb00" Size="5px">  Contact #:</font>  <span style="color:white; font-size:16px;">(+639)947-831-2190</span></li>
+			<br>
+			<li ><img src="language.png" style="width:30px; height:25px;"></img><font face="Serif" color="#ffbb00" Size="5px">  Language :</font> <span Style="color:white;  font-size:16px;">English, Filipino</span></li></p>		
+		</ul>
+
+
+
+
+			<ul style="list-style-type: none">
+			<li class="View" id=cv><a href="">Download my cv</a></li>
+			<li class="View"  id=email><a href="www.facebook.com/MrCentz">Visit My Facebook</a></li>
+			</ul>
+
+
+	
+
+		</div>
+    </div>
+
+
+
+    <br>
+    <div id=sidebar2>
+		<div id=sidebarcontent2>
+        <h2>Education</h2>
+		</div>
+    </div>
+    <div id=sidebar3>
+	<div id=sidebarcontent3>
+        <h2>Skills</h2>
+		</div>
+    </div>
+	
+	<footer><hr>
+
+	<link>
+
+	</footer>
+	
+</body>
+</html>
